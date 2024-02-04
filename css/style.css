@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: rgb(23,82,37);
+    max-height: 1vh;
+}
+
+.header-contenedor h1{
+    font-weight: 600;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 25px;
+    color: black;
+}
+
+.header-contenedor .buscador{
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.header-contenedor .buscador  input{
+    max-width: 500px;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+}
+
+.header-contenedor .buscador input::placeholder{
+    color: black;
+}
+
+.header-contenedor .buscador img{
+    width: 20px;
+    height: 20px;
+    background-color: lightgray
+}
+
+.header-contenedor .iconos-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-contenedor .iconos-header i{
+    font-size: 25px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.marcas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(251,200,39);
+    padding: 0.5rem;
+    gap: 10px;
+}
+
+.marcas :second-child{
+    height: 55px;
+    width: 30px;
+}
+
+main{
+    background-color: rgb(245,245,245);
+    padding: 40px;
+}
+
+main section .sneakers-wrapper{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 2rem;
+}
+
+main section .sneakers-wrapper .aside{
+    
+    grid-column: 1 span 2;
+    height: 500px;
+    padding: 10px;
+    box-shadow: -3px 2px 12px 0px rgba(0,0,0,1);
+-webkit-box-shadow: -3px 2px 12px 0px rgba(0,0,0,1);
+-moz-box-shadow: -3px 2px 12px 0px rgba(0,0,0,1);
+}
+
+main section .sneakers-wrapper .aside h4{
+    font-family: "Jost", sans-serif;
+    margin-bottom: 5px;
+}
+
+main section .sneakers-wrapper .aside span{  
+    font-family: "Jost", sans-serif;
+}
+
+main section .sneakers-wrapper .cards{
+    grid-column-start: 2 ;
+    grid-column-end: 6;
+    gap: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+}
+
+main section .sneakers-wrapper .cards .card-contenido{
+    border: 2px solid black;
+    width: 20%;
+    height: 200px;
+}
