@@ -7,6 +7,23 @@
     box-sizing: border-box;
 }
 
+
+/*INDEX*/
+.index_main{
+    background-color: #f6f6f6;
+}
+.hero_grid_contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero_img img{
+    height: 20px;
+    width: 20px
+}
+
+/*! Comprar ahora*/
 .header-contenedor{
     display: flex;
     justify-content: space-between;

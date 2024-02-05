@@ -12,14 +12,16 @@ const validacionUS = () => {
       let ingresoCon2 = prompt("Contraseña: ");
       if (ingresoUs2== usuario && ingresoCon2==contraseña) {
         alert("Hola " +usuario+ " ,bienvenido a la tienda oficial de Sneaker ID.");
-        break;
+        return false;
       }
-    alert("Te has quedado sin intentos, intentalo nuevamente mas tarde");
   }
+  alert("Te has quedado sin intentos, vuelve a intentarlo mas tarde...")
     
   return false;
+}else if(ingresoUsuario == usuario && ingresoContraseña==contraseña){
+  alert("Hola " +usuario+ " ,bienvenido a la tienda oficial de Sneaker ID.");
 }
-alert("Hola " +usuario+ " ,bienvenido a la tienda oficial de Sneaker ID.");
+
 }
 
 
