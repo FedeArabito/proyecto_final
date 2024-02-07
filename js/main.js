@@ -1,5 +1,5 @@
 //PRE ENTREGA 1
-/* const validacionUS = () => {
+const validacionUS = () => {
   let usuario = "Fede99";
   let contraseña = "12345";
   alert("Bienvenido a Sneaker ID, porfavor introduzca su usuario y contraseña");
@@ -25,7 +25,7 @@
 }
 
 
-validacionUS(); */
+validacionUS(); 
 
 /*   // -NO ES PRE ENTREGA -
   const pagoTarjeta=() =>{
