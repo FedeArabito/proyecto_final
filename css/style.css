@@ -98,10 +98,18 @@ nav .carrito span{
     
 }
 
-/*HERO MAIN*/
-main{
-    background-color: rgb(211, 211, 211);
+.nav-hambg-wrapper{
+    display: none;
 }
+
+.nav-hambg-wrapper span{
+    row-gap: 1.5rem;
+    height: 10px;
+    width: 10px;
+    color: rgb(251,200,39);
+}
+/*HERO MAIN*/
+
 .hero-section{
     background-color: rgb(211, 211, 211);
     max-width: 1800px;
@@ -144,6 +152,54 @@ main{
     
 }
 
+/*NOVEDADES*/
+.novedades{
+    background-color: #f6f6f6;
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+.novedad-wrapper{
+    background-color: #f6f6f6;
+    padding: 20px;
+}
+
+.novedad-wrapper .novedad-titulo-actions{
+    display: flex;
+    max-width: 100%;
+    justify-content: space-evenly;
+    
+}
+
+.flecha-derecha, .flecha-izquierda{
+    background-color: rgb(23,82,37);
+    padding: 0.75rem;
+    border-radius: 50%;
+    vertical-align: center;
+    cursor: pointer;
+}
+
+.flecha-izquierda{
+    transform: rotate(-0.25turn);
+}
+
+.flecha-derecha{
+    transform: rotate(90deg);
+}
+
+.novedades-cards{
+    display: flex;
+    flex-direction: row;
+}
+
+.novedad-img{
+    height: 80px;
+    width: 80px;
+}
+
+.novedad-btn{
+    display: flex;
+    flex-direction: row;
+}
 /*! TIENDA*/
 .header-contenedor{
     display: flex;
@@ -261,4 +317,15 @@ main section .sneakers-wrapper .cards .card-contenido{
     border: 2px solid black;
     width: 20%;
     height: 200px;
+}
+
+@media screen and (max-width = 810px) {
+    nav{
+        display: none;
+    }
+
+    .nav-hambg-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
 }

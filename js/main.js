@@ -1,5 +1,5 @@
 //PRE ENTREGA 1
-const validacionUS = () => {
+/* const validacionUS = () => {
   let usuario = "Fede99";
   let contraseña = "12345";
   alert("Bienvenido a Sneaker ID, porfavor introduzca su usuario y contraseña");
@@ -25,43 +25,59 @@ const validacionUS = () => {
 }
 
 
-validacionUS(); 
+validacionUS();  */
 
-/*   // -NO ES PRE ENTREGA -
-  const pagoTarjeta=() =>{
-  let producto= 250000;
-  let interes = producto/100 * 20;
-  let total = interes + producto;
-  let msj = alert("Hola" +usuario+ " ", "el total de su compra es de $" +producto+" su producto puede ser financiado en: \n 1 cuota sin interes \n 3 cuotas sin interes \n 6 cuotas sin interes \n 12 cuotas sin interes\n ¿En cuantas cuotas desea abonar?");
-  let opcion = prompt("");
-  switch (opcion) {
-    case "1":
-      alert("El total a abonar es de $"+producto);
-      alert("Gracias por confiar en nosotros! Lo esperamos nuevamente!");
-      break;
-    
-      case "3":
-        let cuotaTres = parseFloat(total/3);
-        let msj3 = alert("Genial, su total a abonar es de $"+ total+" siendo cada cuota mensual de $"+cuotaTres);
-        alert("Gracias por confiar en nosotros! Lo esperamos nuevamente!");
-        break;
 
-        case "6":
-          let cuotasSeis = parseFloat(total /6);
-          let msj6 = alert ("Genial, su total a abonar es de $"+ total+" siendo cada cuota mensual de $"+cuotasSeis);
-          alert("Gracias por confiar en nosotros! Lo esperamos nuevamente!");
-          break;
 
-          case "12":
-            let cuotaDoce= parseFloat(total/12);
-            let msj12 = alert ("Genial, su total a abonar es de $"+ total+" siendo cada cuota mensual de $"+cuotaDoce);
-            alert("Gracias por confiar en nosotros! Lo esperamos nuevamente!");
-            break;
-    default:
-      alert("Opcion ingresada no valida.");
-      alert("Se cerrara el programa")
-      break;
+const sneakers = [
+  {
+    nombre: "Janowsky",
+    precio: 2500
+  },
+  {
+    nombre: "Superstars",
+    precio: 6500
+  },
+  {
+    nombre: "Air Jordan",
+    precio: 5400
+  },
+  {
+    nombre: "Vans",
+    precio: 4400
+  }
+];
+
+
+let seleccionZapa = prompt("Que desea comprar?");
+// const validarInput = (input, arr) => {
+//   input;
+//   for (const el of arr) {
+//     const nombre = arr.nombre;
+//     const precio = arr.precio;
+//     if (input == nombre) {
+//       return prompt("Genial, " + input + " ha sido agregado a su carrito, el total a pagar es de " + precio)
+//     }
+//     else{
+//       return alert("Lo sentimos no contamos con ese producto")
+//     }
+//   }
+// }
+// validarInput(seleccionZapa, sneakers);
+
+function validarCompra(input, arrayProductos) {
+  // Buscar el producto en el array
+  const productoEncontrado = arrayProductos.find(
+    (producto) => producto.nombre === input
+  );
+  // Si el producto se encuentra
+  if (productoEncontrado) {
+    // Mostrar mensaje de compra
+    alert(`Muchas gracias por comprar ${productoEncontrado.nombre}!`);
+  } else {
+    // Mostrar mensaje de error
+    alert("El producto no se encuentra en la lista");
   }
 }
 
-pagoTarjeta(); */
+validarCompra(seleccionZapa,sneakers);

@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/main.js"></script>
     <title>Sneaker ID</title>
 </head>
 <body>
     <header>
-    <nav>
+        <nav>
             <img src="./img/logo.jpg" alt="Logo" class="logo">
             <ul>
                 <li>
@@ -28,10 +30,16 @@
                 <img src="./img/grocery-store.png" alt="" class="cart">
                 <span>4</span>
             </div>
-    </nav>
+        </nav>
+
+        <div class="nav-hambg-wrapper">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
     
-
+    
     <main>
         <section class="hero-section">
             <div class="hero-wrapper">
@@ -40,7 +48,7 @@
                     <h1>Somos <br><span>Sneakers</span></h1>
                     <p>Las mejores marcas solo aca</p>
                     <div class="hero-titulo-btn">
-                        <a href="#">Comprar Ya</a>
+                        <a href="#" id="comprar">Comprar Ya</a>
                         <a href="#">Ver Ofertas</a>
                     </div>
                 </div>
@@ -49,6 +57,81 @@
                 </div>
             </div>
         </section>
+        
+        <section class="novedades">
+            <h2>Novedades</h2>
+            <div class="novedad-contenedor swiper">
+                <div class="swiper-wrapper">
+                <div class="novedades-cards swiper-slide">
+                    <img class="novedad-img" src="./img/novedad-1.avif" alt="ZAPATILLAS RIVALRY LOW">
+                    <h3>ZAPATILLAS RIVALRY LOW</h3>
+                    <div class="novedades-btn">
+                        <p>$160.000</p>
+                        <a href="#">
+                            <img src="./img/grocery-store.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="novedades-cards swiper-slide">
+                    <img class="novedad-img" src="./img/novedad-1.avif" alt="ZAPATILLAS RIVALRY LOW">
+                    <h3>ZAPATILLAS RIVALRY LOW</h3>
+                    <div class="novedades-btn">
+                        <p>$160.000</p>
+                        <a href="#">
+                            <img src="./img/grocery-store.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="novedades-cards swiper-slide">
+                    <img class="novedad-img" src="./img/novedad-1.avif" alt="ZAPATILLAS RIVALRY LOW">
+                    <h3>ZAPATILLAS RIVALRY LOW</h3>
+                    <div class="novedades-btn">
+                        <p>$160.000</p>
+                        <a href="#">
+                            <img src="./img/grocery-store.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="novedades-cards swiper-slide">
+                    <img class="novedad-img" src="./img/novedad-1.avif" alt="ZAPATILLAS RIVALRY LOW">
+                    <h3>ZAPATILLAS RIVALRY LOW</h3>
+                    <div class="novedades-btn">
+                        <p>$160.000</p>
+                        <a href="#">
+                            <img src="./img/grocery-store.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="novedades-cards swiper-slide">
+                    <img class="novedad-img" src="./img/novedad-1.avif" alt="ZAPATILLAS RIVALRY LOW">
+                    <h3>ZAPATILLAS RIVALRY LOW</h3>
+                    <div class="novedades-btn">
+                        <p>$160.000</p>
+                        <a href="#">
+                            <img src="./img/grocery-store.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="novedades-cards swiper-slide">
+                    <img class="novedad-img" src="./img/novedad-1.avif" alt="ZAPATILLAS RIVALRY LOW">
+                    <h3>ZAPATILLAS RIVALRY LOW</h3>
+                    <div class="novedades-btn">
+                        <p>$160.000</p>
+                        <a href="#">
+                            <img src="./img/grocery-store.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
