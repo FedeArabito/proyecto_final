@@ -318,14 +318,8 @@ main section .sneakers-wrapper .cards .card-contenido{
     width: 20%;
     height: 200px;
 }
-
-@media screen and (max-width = 810px) {
-    nav{
-        display: none;
-    }
-
-    .nav-hambg-wrapper{
-        display: flex;
-        flex-direction: column;
+@media  screen and (max-width: 770px) {
+    .hero-section img{
+        width: fit-content;
     }
 }
